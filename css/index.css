@@ -1,0 +1,270 @@
+html, body.main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main {
+    position: relative;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+
+.load-head {
+    position: absolute;
+    top: 7%;
+    width: 100%;
+    text-align: center;
+}
+
+.load-head h3 {
+    color: #fff;
+}
+
+.load-head h3:nth-child(1) {
+    font-size: 0.5rem;
+}
+
+.load-head h3:nth-child(2) {
+    font-size: 0.25rem;
+    padding: 0.1rem 0;
+}
+
+.progress {
+    position: absolute;
+    top: 20%;
+    width: 80%;
+    height: 0.4rem;
+    margin: 0 10%;
+    border-radius: 0.1rem;
+    background: #fff;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(45deg, #5cb85c 0%, #5cb85c 25%, #74c274 25%, #74c274 50%, #5cb85c 50%, #5cb85c 75%, #74c274 75%, #74c274 100%);
+    background: linear-gradient(45deg, #5cb85c 0%, #5cb85c 25%, #74c274 25%, #74c274 50%, #5cb85c 50%, #5cb85c 75%, #74c274 75%, #74c274 100%);
+    background-size: 0.4rem 0.4rem;
+    background-repeat: repeat-x;
+    -webkit-transition: width 1s linear;
+    transition: width 1s linear;
+}
+
+.phone {
+    width: 100%;
+    height: 100%;
+    background: url("../images/js.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 9;
+    display: none;
+}
+
+.phone-name {
+    width: 100%;
+    height: 1.15rem;
+    top: 0.5rem;
+    background: url("../images/js.jpg") no-repeat center;
+    background-size: 2.262rem 1.15rem;
+}
+
+.phone-listen {
+    width: 5.2rem;
+    height: 3.6rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -2.6rem;
+    background: url("../images/js.jpg") no-repeat;
+    background-size: 5.2rem 3.6rem;
+}
+
+.phone-arc {
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    left: 3.58rem;
+    top: 1.43rem;
+    color: #0f0;
+    border: 0.03rem solid #0f0;
+    border-radius: 50%;
+    -webkit-animation: btnScale 0.8s infinite both;
+    animation: btnScale 0.8s infinite both;
+    z-index: -1;
+}
+
+@-webkit-keyframes btnScale {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+    }
+}
+
+@keyframes btnScale {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+    }
+}
+
+.phone-text {
+    font-size: 0.3rem;
+    margin-top: 0.1rem;
+    letter-spacing: 0.05rem;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 1.6rem;
+    color: #fff;
+}
+
+.phone-key {
+    width: 5.2rem;
+    height: 6.59rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2.6rem;
+    background: url("../images/js.jpg") no-repeat;
+    background-size: 100% 100%;
+    -webkit-transform: translate(0, 6.59rem);
+    transform: translate(0, 6.59rem);
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.phone-refuse {
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 50%;
+    margin-left: -0.85rem;
+    z-index: 2;
+}
+
+.message {
+    width: 100%;
+    height: 100%;
+    background: #eaeaea;
+    position: absolute;
+    z-index: 8;
+}
+
+.message ul {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0.2rem;
+}
+
+.message ul li {
+    max-width: 3.6rem;
+    padding: 0.25rem;
+    line-height: 0.4rem;
+    font-size: 0.26rem;
+    margin-bottom: 0.4rem;
+    border-radius: 0.1rem;
+    position: relative;
+    /*opacity: 0;*/
+}
+
+.message ul li .left {
+    float: left;
+    left: 1.25rem;
+    background: #fff;
+    border: 0.02rem solid #cacaca;
+}
+
+.message ul li .right {
+    float: right;
+    left: 1.25rem;
+    background: #a0e55f;
+    border: 0.02rem solid #93b474;
+}
+
+.message ul li .arrow {
+    width: 0.1rem;
+    height: 0.2rem;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0.2rem;
+}
+
+.message ul li.left .arrow {
+    left: -0.1rem;
+    background-image: url("../images/arrow-left.png");
+}
+
+.message ul li.right .arrow {
+    right: -0.1rem;
+    background-image: url("../images/arrow-right.png");
+}
+
+.message ul li img {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+}
+
+.message ul li.left img {
+    left: 1rem;
+}
+
+.message ul li.right img {
+    right: -1rem;
+}
+
+.keyboard {
+    width: 6.4rem;
+    height: 5.16rem;
+    background: url("../images/keyboard.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: 3.2rem;
+    bottom: 0;
+    -webkit-transform: translate(0, 4.16rem);
+    transform: translate(0, 4.16rem);
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.keyboard-text {
+    width: 4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    position: absolute;
+    top: 0.35rem;
+    left: 0.9rem;
+    font-size: 0.25rem;
+}
+
+.keyboard-btn {
+    width: 1.47rem;
+    height: 0.74rem;
+    position: absolute;
+    right: 0.1rem;
+    bottom: 0.6rem;
+    background: url("../images/keyboard-btn.png") no-repeat;
+    background-size: 100% 100%;
+}
