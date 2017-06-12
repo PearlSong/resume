@@ -59,107 +59,6 @@ html, body.main {
     transition: width 1s linear;
 }
 
-.phone {
-    width: 100%;
-    height: 100%;
-    background: url("../images/js.jpg") no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-    z-index: 9;
-    display: none;
-}
-
-.phone-name {
-    width: 100%;
-    height: 1.15rem;
-    top: 0.5rem;
-    background: url("../images/js.jpg") no-repeat center;
-    background-size: 2.262rem 1.15rem;
-}
-
-.phone-listen {
-    width: 5.2rem;
-    height: 3.6rem;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    margin-left: -2.6rem;
-    background: url("../images/js.jpg") no-repeat;
-    background-size: 5.2rem 3.6rem;
-}
-
-.phone-arc {
-    width: 1.7rem;
-    height: 1.7rem;
-    position: absolute;
-    left: 3.58rem;
-    top: 1.43rem;
-    color: #0f0;
-    border: 0.03rem solid #0f0;
-    border-radius: 50%;
-    -webkit-animation: btnScale 0.8s infinite both;
-    animation: btnScale 0.8s infinite both;
-    z-index: -1;
-}
-
-@-webkit-keyframes btnScale {
-    0% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-    100% {
-        -webkit-transform: scale(0.6);
-        transform: scale(0.6);
-    }
-}
-
-@keyframes btnScale {
-    0% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-    100% {
-        -webkit-transform: scale(0.6);
-        transform: scale(0.6);
-    }
-}
-
-.phone-text {
-    font-size: 0.3rem;
-    margin-top: 0.1rem;
-    letter-spacing: 0.05rem;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 1.6rem;
-    color: #fff;
-}
-
-.phone-key {
-    width: 5.2rem;
-    height: 6.59rem;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -2.6rem;
-    background: url("../images/js.jpg") no-repeat;
-    background-size: 100% 100%;
-    -webkit-transform: translate(0, 6.59rem);
-    transform: translate(0, 6.59rem);
-    -webkit-transition: 1s;
-    transition: 1s;
-}
-
-.phone-refuse {
-    width: 1.7rem;
-    height: 1.7rem;
-    position: absolute;
-    bottom: 0.3rem;
-    left: 50%;
-    margin-left: -0.85rem;
-    z-index: 2;
-}
-
 .message {
     width: 100%;
     height: 100%;
@@ -269,6 +168,7 @@ html, body.main {
     background: url("../images/keyboard-btn.png") no-repeat;
     background-size: 100% 100%;
 }
+
 .cube{
     width:100%;
     height:100%;
@@ -279,56 +179,78 @@ html, body.main {
     -webkit-perspective: 8rem;
     perspective: 8rem;
 }
-.cube ul{
+
+.cube ul {
     width: 5.1rem;
     height: 5.1rem;
     position: absolute;
-    left:50%;
-    top:50%;
+    left: 50%;
+    top: 50%;
     margin-left: -2.55rem;
     margin-top: -2.55rem;
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+    -webkit-transform: scale(0.5) rotateX(-35deg) rotateY(135deg);
+    transform: scale(0.5) rotateX(-35deg) rotateY(135deg);
+    /**/
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    -webkit-transform-origin: 2.55rem 2.55rem -2.55rem;
+    transform-origin: 2.55rem 2.55rem -2.55rem;
 }
-.cube ul li{
-    width:100%;
-    height:100%;
+
+.cube ul li {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     background-size: 100% 100%;
 }
-.cube ul li:nth-child(1){
+
+.cube ul li:nth-child(1) {
     background-image: url("../images/cube1.png");
     top: -5.1rem;
     transform-origin: bottom;
     transform: rotateX(90deg);
 }
-.cube ul li:nth-child(2){
+
+.cube ul li:nth-child(2) {
     background-image: url("../images/cube2.png");
     top: 5.1rem;
     transform-origin: top;
     transform: rotateX(-90deg);
 }
-.cube ul li:nth-child(3){
+
+.cube ul li:nth-child(3) {
     background-image: url("../images/cube3.png");
     left: 5.1rem;
     transform-origin: left;
     transform: rotateY(90deg);
 }
-.cube ul li:nth-child(4){
+
+.cube ul li:nth-child(4) {
     background-image: url("../images/cube4.png");
     left: -5.1rem;
     transform-origin: right;
     transform: rotateY(-90deg);
 }
-.cube ul li:nth-child(5){
+
+.cube ul li:nth-child(5) {
     background-image: url("../images/cube5.png");
     transform: translateZ(0);
 }
-.cube ul li:nth-child(6){
+
+.cube ul li:nth-child(6) {
     background-image: url("../images/cube6.png");
     transform: translateZ(-5.1rem);
+}
+
+.cubeTip {
+    width: 3.94rem;
+    height: 0.44rem;
+    background: url("../images/cubeTip.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.97rem;
+    bottom: 0.5rem;
 }
