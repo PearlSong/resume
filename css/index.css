@@ -1,4 +1,4 @@
-html, body.main {
+html, body,.main {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -19,7 +19,7 @@ html, body.main {
 
 .load-head {
     position: absolute;
-    top: 7%;
+    top: 35%;
     width: 100%;
     text-align: center;
 }
@@ -39,7 +39,7 @@ html, body.main {
 
 .progress {
     position: absolute;
-    top: 20%;
+    top: 70%;
     width: 80%;
     height: 0.4rem;
     margin: 0 10%;
@@ -49,7 +49,7 @@ html, body.main {
 }
 
 .progress-bar {
-    width: 100%;
+    width: 0%;
     height: 100%;
     background: -webkit-linear-gradient(45deg, #5cb85c 0%, #5cb85c 25%, #74c274 25%, #74c274 50%, #5cb85c 50%, #5cb85c 75%, #74c274 75%, #74c274 100%);
     background: linear-gradient(45deg, #5cb85c 0%, #5cb85c 25%, #74c274 25%, #74c274 50%, #5cb85c 50%, #5cb85c 75%, #74c274 75%, #74c274 100%);
@@ -65,7 +65,7 @@ html, body.main {
     background: #eaeaea;
     position: absolute;
     z-index: 8;
-    display: none;
+    /*display: none;*/
 }
 
 .message ul {
@@ -84,8 +84,14 @@ html, body.main {
     border-radius: 0.1rem;
     position: relative;
     opacity: 0;
+    -webkit-transform:translate(0,1rem);
+    transform:translate(0,1rem);
+    -webkit-transition:1s;
+    transition:1s;
 }
-
+.message ul li.btnMsg{
+    opacity: 0;
+}
 .message ul li.left {
     float: left;
     left: 1.25rem;
@@ -142,7 +148,7 @@ html, body.main {
     position: absolute;
     left: 50%;
     margin-left: -3.2rem;
-    bottom: -7.2rem;
+    bottom: 4.2rem;
     -webkit-transform: translate(0, 8.29rem);
     transform: translate(0, 8.29rem);
     -webkit-transition: 1s;
@@ -178,6 +184,7 @@ html, body.main {
     background-size: 100% 100%;
     -webkit-perspective: 8rem;
     perspective: 8rem;
+    display: none;
 }
 
 .cube ul {
