@@ -1,5 +1,5 @@
 var loadingFn = function () {
-    var ary = ['arrow-left.png', 'arrow-right.png', 'bg.png', 'coin.jpg', 'cube1.png', 'cube2.png', 'cube3.png', 'cube4.png', 'cube5.png', 'cube6.png', 'cubeBg.jpg', 'cubeTip.png', 'head.jpg', 'keyboard.png', 'keyboard-btn.png', 'return.png', 'js.jpg'];
+    var ary = ['arrow-left.png', 'arrow-right.png', 'bg.png', 'coin.jpg', 'cube1.png', 'cube2.png', 'cube3.png', 'cube4.png', 'cube5.png', 'cube6.png', 'cubeBg.jpg', 'cubeTip.png', 'head.jpg', 'keyboard.png', 'keyboard-btn.png', 'return.png', 'js.jpg','skill.png','skill1.png','skill2.png','skill3.png','skill4.png','skill5.png','skill6.png','skill7.png','product.jpg','MainCard_Logo.png','gift_down_pic.jpg','mainpic_shoutou.png','top_logo.png','menu-icon.png','me.jpg','info.png','judge.png','concatPhone.png'];
     var $loading = $('.loading');
     var $progressBar = $('.progress-bar');
     var num = 0;
@@ -31,7 +31,7 @@ var loadingFn = function () {
 loadingFn();
 var messageFn = (function () {
     var $msg = $('.message'),
-        $msgUl = $('.message').children('ul'),
+        $msgUl = $msg.children('ul'),
         $oLis = $msgUl.children('li');
     var h = 0,//累加已经显示的li的高度之和
         num = 0, //li索引,默认从第一条信息开始发送
@@ -76,7 +76,7 @@ var messageFn = (function () {
             var $keyboard = $('.keyboard');
             var $keyboardText = $('.keyboard-text');
             var $keyboardBtn = $('.keyboard-btn');
-            var str = '人丑事多还要求高';
+            var str = '请问贵公司有什么要求吗？';
             str = str.split('');
             var num = 0,//数组str里面的每一项的索引
                 keytimer = null,

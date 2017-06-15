@@ -278,16 +278,16 @@ html, body,.main {
     background: #fff9c1;
 }
 .swiper-container .swiper-slide:nth-child(3){
-    background: #e45454;
+    background: #cccc99;
 }
 .swiper-container .swiper-slide:nth-child(4){
-    background: #fac471;
+    background: #ffcc99;
 }
 .swiper-container .swiper-slide:nth-child(5){
     background: #fbffe8;
 }
 .swiper-container .swiper-slide:nth-child(6){
-    background: #5975ff;
+    background: #33cccc;
 }
 .slide1 dl{
     width:80%;
@@ -387,16 +387,14 @@ html, body,.main {
     margin-top: -1.42rem;
     background-size: 60% 60%;
 }
-.slide3 h3{
+.slide3 h2{
     width: 3.82rem;
     height: 1.41rem;
     position: absolute;
     top:9%;
     left:50%;
     margin-left: -1.91rem;
-    background: url("");
-    -webkit-background-size: 90% 90%;
-    background-size: 90% 90%;
+    color: #fff;
 }
 .slide3 ul{
     position: absolute;
@@ -419,19 +417,19 @@ html, body,.main {
     background-repeat: no-repeat;
 }
 .slide3 ul li:nth-child(1) span{
-    background-image: url("");
+    background-image: url("../images/gift_down_pic.jpg");
 }
 .slide3 ul li:nth-child(2) span{
-    background-image: url("");
+    background-image: url("../images/top_logo.png");
 }
 .slide3 ul li:nth-child(3) span{
-    background-image: url("");
+    background-image: url("../images/MainCard_Logo.png");
 }
 .slide3 ul li:nth-child(4) span{
-    background-image: url("");
+    background-image: url("../images/mainpic_shoutou.png");
 }
 .slide3 ul li:nth-child(5) span{
-    background-image: url("");
+    background-image: url("../images/product.jpg");
 }
 .slide3 ul li h4{
     font-size: 0.22rem;
@@ -447,10 +445,13 @@ html, body,.main {
     font-family: defaultFont;
     position: absolute;
     left:10%;
-    top:5%;
+    top:8%;
 }
 .slide4 p:nth-of-type(2){
-    top:18%;
+    top:20%;
+}
+.slide4 p:nth-of-type(3){
+    top:32%;
 }
 .slide4 p span{
     font-size: 0.5rem;
@@ -480,6 +481,11 @@ html, body,.main {
     width: 100%;
     height: 100%;
 }
+.slide5 div img{
+    width:90%;
+    height:90%;
+    border:0.08rem solid #fff;
+}
 .slide5 div:nth-child(1){
     width:5rem;
     height: 3.75rem;
@@ -493,43 +499,19 @@ html, body,.main {
     transform:rotate(7deg);
 }
 .slide5 div:nth-child(2){
-    width: 5rem;
-    height: 3.75rem;
+    width: 5.1rem;
+    height: 8.5rem;
     position: absolute;
     left:10%;
-    top:25%;
+    top:37%;
     z-index: 4;
 }
 .slide5 div:nth-child(2) img{
     -webkit-transform:rotate(349deg);
     transform:rotate(349deg);
 }
-.slide5 div:nth-child(3){
-    width: 5rem;
-    height: 3.31rem;
-    position: absolute;
-    left:17%;
-    top:44%;
-    z-index: 5;
-}
-.slide5 div:nth-child(3) img{
-    -webkit-transform:rotate(9deg);
-    transform:rotate(9deg);
-}
-.slide5 div:nth-child(4){
-    position: absolute;
-    left:25%;
-    top:90%;
-}
-.slide5 div img{
-    width:90%;
-    height:90%;
-    border:0.08rem solid #fff;
-}
-.slide5 div:nth-child(4) img,.slide5 div:nth-child(5) img{
-    width:100%;
-    height:100%;
-    border:none;
+.slide6{
+    font-size: 0.26rem;
 }
 .slide6 h3{
     padding:8% 0 5%;
@@ -563,7 +545,7 @@ html, body,.main {
     top: 0.1rem;
 }
 .slide6 ul li:nth-child(1)>span{
-    background: url("");
+    background: url("../images/concatPhone.png");
     background-size: 100% 100%;
 }
 .slide6 ul li>div{
@@ -572,17 +554,21 @@ html, body,.main {
     padding: 0.3rem 0.2rem;
     z-index: 5;
     text-align: left;
-    background-color: #fff;
-    color: #23a3d3;
-    line-height: 0.35rem;
+    /*background-color: #fff;*/
+    box-shadow: 5px 5px 10px #23a3d3;
+    color: #fff;
+    line-height: 0.55rem;
     margin-left: 0.2rem;
+    font-size: 0.26rem;
+}
+.slide6 ul li:nth-child(2)>div{
+    margin-top: 60%;
+    margin-left: 1rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px #23a3d3;
 }
 .slide6 ul li>div span{
     font-size: 0.24rem;
-}
-.slide6 ul li:nth-child(3) img{
-    width:100%;
-    height:100%;
 }
 
 .slide2 h3,.slide2 ul li{
@@ -635,13 +621,13 @@ html, body,.main {
     -webkit-animation: tada 1s 1.5s infinite;
     animation: tada 1s 1.5s infinite;
 }
-.slide3 h3,.slide3 ul li span,.slide3 ul li h4,.slide3 ul li p{
+.slide3 h2,.slide3 ul li span,.slide3 ul li h4,.slide3 ul li p{
     opacity: 1;
 }
-#slide3 h3,#slide3 ul li span,#slide3 ul li h4,#slide3 ul li p{
+#slide3 h2,#slide3 ul li span,#slide3 ul li h4,#slide3 ul li p{
     opacity: 1;
 }
-#slide3 h3{
+#slide3 h2{
     -webkit-animation:bounceInLeft 1s 0.5s 1 both;
     animation:bounceInLeft 1s 0.5s 1 both;
 }
@@ -730,18 +716,6 @@ html, body,.main {
 #slide5 div:nth-child(2){
     -webkit-animation:fadeInLeft 1s 1.5s both;
     animation:fadeInLeft 1s 1.5s both;
-}
-#slide5 div:nth-child(3){
-    -webkit-animation:fadeInRight 1s 2.5s both;
-    animation:fadeInRight 1s 2.5s both;
-}
-#slide5 div:nth-child(4){
-    -webkit-animation:fadeInUp 1s 3s both;
-    animation:fadeInUp 1s 3s both;
-}
-#slide5 div:nth-child(5){
-    -webkit-animation:fadeInUp 1s 3.5s both;
-    animation:fadeInUp 1s 3.5s both;
 }
 .slide6 h3,.slide6 ul li span,.slide6 ul li div,.slide6 ul li img {
     opacity: 0;
